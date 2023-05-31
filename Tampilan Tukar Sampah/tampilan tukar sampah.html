@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/form-tukarsampah-style.css" type="text/css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="tukarPage">
+        <div class="tukarPage__bar">
+            <div class="tukarPage__bar-back">
+                <img alt="back-icon" aria-label="Kembali Ke Beranda" src="./img/icon/back-icon.svg" />
+                <a href="#">Kembali</a>
+            </div>
+            <img class="tukarPage__bar-logo" alt="Logo Website ByeTrash" src="./img/logo/logo_byetrash.png"/>
+        </div>
+            <div class="tukarPage__title">
+                <h1>Tukar Sampah</h1>
+                <p>Ayo Tukar Sampah Kamu Disini!</p>
+            </div>
+            <form>
+                <div class="tukarPage__form">
+                    <label class="tukarPage__form-label">Jenis Sampah</label>
+                    <select class="tukarPage__form-option">
+                        <option value="Plastik">Plastik</option>
+                        <option value="Botol">Botol</option>
+                        <option value="Seng">Seng</option>
+                        <option value="Gelas">Gelas</option>
+                    </select>
+                </div>
+                <div class="tukarPage__form">
+                    <label class="tukarPage__form-label">Harga /kg</label>
+                    <input type="number" class="tukarPage__form-input" autocomplete="off" disabled/>
+                </div>
+                <div class="tukarPage__form">
+                    <label class="tukarPage__form-label">Jumlah /kg</label>
+                    <input type="number" class="tukarPage__form-input" autocomplete="off"/>
+                </div>
+                <div class="tukarPage__form">
+                    <label class="tukarPage__form-label">Harga Total</label>
+                    <input type="Number" class="tukarPage__form-input" autocomplete="off" disabled/>
+                </div>
+                <div class="tukarPage__button">
+                    <button id="btn-confirm">Konfirmasi</button>
+                </div>
+            </form>
+    </div>
+</body>
+</html>
+    
