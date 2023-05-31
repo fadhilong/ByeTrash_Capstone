@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+.profilPage {
+    background-color: #ffff;
+    padding: 30px;
+    margin: 100px;
+    border-radius: 20px;
+    border: 2px solid #303B1D;
+    box-shadow: 5px 5px 5px #303b1d8f;
+    cursor: default;
+}
+
+.profilPage__bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.profilPage__bar-back {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #303B1D;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.profilPage__bar-back:hover {
+    border: solid 1px black;  
+    transition-duration: 2ms;
+    padding: 5px;
+}
+
+.loginPage__bar-back a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #303B1D;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.profilPage__bar-back img {
+    width: 20px;
+    height: 20px;
+}
+
+.profilPage__bar-logo {
+    width: 140px;
+    height: 40px;
+}
+
+.profilPage__title {
+    text-align: center;
+    padding-bottom: 20px;
+    align-self: center;
+    color: #303B1D;
+    margin: 10px;
+}
+
+.profilPage__title h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.profilPage__title img {
+    padding: 8px;
+    width: 50px;
+    height: 50px;
+    border: #303B1D solid 1px;
+    color: #303B1D;
+    border-radius: 50%;
+}
+
+
+.profilPage__form {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.profilPage__form-input {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    padding-bottom: 12px;
+}
+
+.profilPage__form-input input {
+    border : solid 2px #303B1D;
+    border-radius: 10px;
+    margin-top: 6px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+.profilPage__form-input input:focus{
+    background-color: #3c8f16;
+    overflow: hidden;
+    color: white;
+}
+
+.profilPage__button{
+    display: flex;
+    justify-content: right;
+}
+
+#btn-save {
+    width: 80px;
+    text-align: center;
+    font-weight: 700;
+    color: #ffff;
+    background-color: #303B1D;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+#btn-save:hover {
+    color: #3c8f16;
+}
+
+@media  (max-width: 700px){
+    .profilPage__form {
+        font-size: 12px;
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .profilPage__form label {
+        font-size: 12px;
+    }
+
+    .loginPage__signPart {
+        font-size: 12px;
+    }
+
+    .profilPage__form-input {
+        font-size: 12px;
+    }
+
+    .profilPage__title h1 {
+        font-size: 20px;
+    }
+
+    .profilPage__title img {
+        padding: 8px;
+        width: 40px;
+        height: 40px;
+        border: #303B1D solid 1px;
+        color: #303B1D;
+        border-radius: 50%;
+    }
+
+    .profilPage__bar-logo {
+        width: 110px;
+        height: 30px;
+    }
+
+    #btn-save {
+        font-size: 12px;
+    }
+}

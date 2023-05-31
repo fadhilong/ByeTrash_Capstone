@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+.tukarPage {
+    background-color: #ffff;
+    padding: 30px;
+    margin: 100px;
+    border-radius: 20px;
+    border: 2px solid #303B1D;
+    box-shadow: 5px 5px 5px #303b1d8f;
+    cursor: default;
+}
+
+.tukarPage__bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.tukarPage__bar-back {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #303B1D;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.tukarPage__bar-back:hover {
+    border: solid 1px black;  
+    transition-duration: 2ms;
+}
+
+.tukarPage__bar .tukarPage__bar-back a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #303B1D;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.tukarPage__bar .tukarPage__bar-back img {
+    width: 20px;
+    height: 20px;
+}
+
+.tukarPage__bar-logo {
+    width: 140px;
+    height: 40px;
+}
+
+.tukarPage__title {
+    text-align: center;
+    padding-bottom: 20px;
+    align-self: center;
+    color: #303B1D;
+}
+
+.tukarPage__title h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.tukarPage__title p {
+    font-size: 16px;
+}
+
+.tukarPage__form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 12px;
+}
+
+.tukarPage__form label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #303B1D;
+    margin-bottom: 5px;
+}
+
+.tukarPage__form input {
+    padding: 8px;
+    width: 100%;
+    border-radius: 12px ;
+    border: solid 2px #303B1D;
+    cursor: pointer;
+}
+
+.tukarPage__form-option {
+    padding: 8px;
+    width: 100%;
+    border-radius: 12px ;
+    border: solid 2px #303B1D;
+    cursor: pointer;
+}
+
+.tukarPage__form-option > option{
+    padding: 5px;
+}
+
+.tukarPage__form input:focus{
+    background-color: #3c8f16;
+    overflow: hidden;
+    color: white;
+}
+
+.tukarPage__form-option:focus {
+    background-color: #3c8f16;
+    overflow: hidden;
+    color: white
+}
+
+
+#btn-confirm {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    color: #ffff;
+    background-color: #303B1D;
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+#btn-confirm:hover {
+    color: #3c8f16;
+}
+
+
+@media  (max-width: 700px){
+    .tukarPage__form {
+        font-size: 12px;
+    }
+
+    .tukarPage__form label {
+        font-size: 12px;
+    }
+
+    .tukarPage__form-input {
+        font-size: 12px;
+    }
+
+    .tukarPage__title h1 {
+        font-size: 20px;
+    }
+
+    .tukarPage__title p {
+        font-size: 14px;
+    }
+
+    #btn-confirm {
+        font-size: 12px;
+    }
+
+    .tukarPage__bar-logo {
+        width: 110px;
+        height: 30px;
+    }
+}
